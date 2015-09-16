@@ -34,7 +34,6 @@ public class ReadActivity extends AppCompatActivity {
         Ndef ndef = Ndef.get(tag);
         try {
             ndef.connect();
-            ndef.connect();
             Log.d("mylog", "ndef message:" + ndef.getNdefMessage().toString());
             String type = ndef.getType();
             Log.d("mylog", "type:" + type);
